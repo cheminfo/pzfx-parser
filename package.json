@@ -9,6 +9,7 @@
     "src"
   ],
   "scripts": {
+    "build": "rollup -c && cheminfo-build --root PZFXParser",
     "eslint": "eslint src",
     "eslint-fix": "npm run eslint -- --fix",
     "prepublishOnly": "rollup -c",
