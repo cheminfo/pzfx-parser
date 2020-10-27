@@ -19,7 +19,7 @@ Note: This package does not return information about graphs, layouts or results 
 ```js
 import { readFileSync } from 'fs';
 
-import { pzfxParser } from 'fcs-parser';
+import { pzfxParser } from 'pzfx-parser';
 
 const buffer = readFileSync('pathToFile');
 let parsed = pzfxParser(buffer);
