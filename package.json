@@ -1,0 +1,58 @@
+{
+  "name": "pzfx-parser",
+  "version": "0.0.0",
+  "description": "parser",
+  "main": "lib/index.js",
+  "module": "src/index.js",
+  "files": [
+    "lib",
+    "src"
+  ],
+  "scripts": {
+    "eslint": "eslint src",
+    "eslint-fix": "npm run eslint -- --fix",
+    "prepublishOnly": "rollup -c",
+    "test": "npm run test-coverage && npm run eslint",
+    "test-coverage": "jest --coverage",
+    "test-only": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cheminfo/pzfx-parser.git"
+  },
+  "keywords": [],
+  "author": "Javier Osorio",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cheminfo/pzfx-parser/issues"
+  },
+  "homepage": "https://github.com/cheminfo/pzfx-parser#readme",
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "prettier": {
+    "arrowParens": "always",
+    "semi": true,
+    "singleQuote": true,
+    "tabWidth": 2,
+    "trailingComma": "all"
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.12.1",
+    "@types/jest": "^26.0.15",
+    "eslint": "^7.12.1",
+    "eslint-config-cheminfo": "^5.2.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jest": "^24.1.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "jest": "^26.6.1",
+    "prettier": "^2.1.2",
+    "rollup": "^2.32.1"
+  },
+  "dependencies": {
+    "cheminfo-build": "^1.1.8",
+    "fast-xml-parser": "^3.17.4",
+    "fs": "0.0.1-security",
+    "path": "^0.12.7"
+  }
+}
